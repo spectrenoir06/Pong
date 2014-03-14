@@ -1,15 +1,16 @@
 Gamestate = require "class/Gamestate"
 Camera    = require "class/Camera"
 Timer     = require "class/Timer"
+require "class/light"
+require "class/postshader"
+
+
+
+require "gamestate/jeu"
 
 function love.load()
   
-end
+  Gamestate.registerEvents()
+     Gamestate.switch(jeu)
 
-function love.update(dt)
-  
-end
-
-function love.draw()
-  
 end
